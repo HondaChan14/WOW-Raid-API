@@ -3,10 +3,15 @@
     box-sizing: border-box;
   }  
 
+  html{
+    font-family: 'Crimson Text', serif;
+  }
+
 body {
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Crimson Text', serif;
    }
 
    h1{
@@ -15,8 +20,58 @@ body {
      text-align: center;
    }
 
+   .kel{
+     width: 270px;
+     height: 250px;
+   }
+
+   .four{
+    width: 300px;
+    height: 250px;
+  }
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.info1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 98vw;
+} 
+
+.boss1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30vw;
+  color: white;
+}
+.boss1-a{
+  width: 45vw;
+  color: white;
+} 
+
+.boss2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 35vw;
+  color: white;
+} 
+
+.boss2-a{
+  width: 35vw;
+  color: white;
+} 
+
+
+
 /* BUTTON CSS */
 .button-36 {
+  
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 8px;
   border: 2px solid black;

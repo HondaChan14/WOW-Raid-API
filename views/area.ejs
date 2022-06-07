@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>World of Warcraft Raid API</title>
+</head>
+<body>
+    <h1>World of Warcraft Raid Time</h1>
+
+    <div class="nav">
+    <form action="/raid/Naxxramas" method="GET">
+        <button class="button-36"   type="submit" role="button">Naxxramas</button>
+    </form>
+
+    <form action="/raid/Ulduar" method="GET">
+        <button class="button-36"  type="submit" role="button">Ulduar</button>
+    </form>
+
+    <form action="/raid/Icecrown Citadel" method="GET">
+        <button class="button-36"  type="submit" role="button">Icecrown Citadel</button>
+    </form>
+</div>
+<div class="info1">
+    <div class="boss1">
+    <h2>Bosses Location: <%=area.areaName%></h2>
+    <h2>Boss Name: <%= area.bosses[0].bossName %></h2>
+    
+    </div>
+<div class="boss1-a">
+    <h2>Boss Drops:</h2>
+    
+    <% area.bosses[0].bossDrop.forEach(item =>{ %>
+        <h3><%= item %></h3>
+    <%})%>
+    
+    <h2>Item Level Damage: <%= area.bosses[0].itemLevelRange %></h2>
+</div>
+<img src="<%=area.bosses[0].gif%>" alt="" class="kel">
+</div>
+
+<div class="info1">
+    <div class="boss2">
+    <h2>Bosses Location: <%=area.areaName%></h2>
+    <h2>Boss Name: <%= area.bosses[1].bossName %></h2>
+    </div>
+    <div class="boss2-a">
+    <h2>Boss Drops:</h2>
+   
+    <% area.bosses[1].bossDrop.forEach(item =>{ %>
+        <h3><%= item %></h3>
+    <%})%>
+    
+    <h2>Item Level Damage: <%= area.bosses[1].itemLevelRange %></h2>
+    </div> 
+    <img src="<%=area.bosses[1].gif%>" alt="" class="four">
+    </div>
+
+
+</body>
+</html>

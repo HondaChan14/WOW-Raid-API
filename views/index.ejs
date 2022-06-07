@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>World of Warcraft Raid API</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>World of Warcraft Raid Time</h1>
 
-
+    <div class="nav">
     <form action="/raid/Naxxramas" method="GET">
-        <button class="button-36"  id = "Naxxramas-button" type="submit" role="button">Naxxramas</button>
+      <button class="button-36" type="submit" role="button">Naxxramas</button>
     </form>
 
     <form action="/raid/Ulduar" method="GET">
-        <button class="button-36"  id = "Ulduar-button" type="submit" role="button">Ulduar</button>
+      <button class="button-36" type="submit" role="button">Ulduar</button>
     </form>
 
-    <form action="/raid/Icecrown_Citadel" method="GET">
-        <button class="button-36" id = "Icecrown_Citadel-button" type="submit" role="button">Icecrown Citadel</button>
+    <form action="/raid/Icecrown Citadel" method="GET">
+      <button class="button-36" type="submit" role="button">
+        Icecrown Citadel
+      </button>
     </form>
 
-
-    <div id ="display">
-        
+    <div id="display"></div>
     </div>
-
-<script src="../public/main.js"></script>
-</body>
+  </body>
 </html>
